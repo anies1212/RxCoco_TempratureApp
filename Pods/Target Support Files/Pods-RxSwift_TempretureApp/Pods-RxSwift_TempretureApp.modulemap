@@ -1,0 +1,6 @@
+framework module Pods_RxSwift_TempretureApp {
+  umbrella header "Pods-RxSwift_TempretureApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

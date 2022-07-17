@@ -13,9 +13,14 @@
 		57D91E05288409330037F3A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D91E03288409330037F3A5 /* Main.storyboard */; };
 		57D91E07288409350037F3A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57D91E06288409350037F3A5 /* Assets.xcassets */; };
 		57D91E0A288409350037F3A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D91E08288409350037F3A5 /* LaunchScreen.storyboard */; };
+		57D91E1228840BA90037F3A5 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D91E1128840BA90037F3A5 /* Models.swift */; };
+		57D91E1428840C490037F3A5 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D91E1328840C490037F3A5 /* URLRequest+Extensions.swift */; };
+		57D91E16288411590037F3A5 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D91E15288411590037F3A5 /* URL+Extensions.swift */; };
+		E9625571B7DDEB85AEE9B7DA /* Pods_RxSwift_TempretureApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7805DA429B644553CBB75C30 /* Pods_RxSwift_TempretureApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094F026B9ADE0B0C7FF00891 /* Pods-RxSwift_TempretureApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_TempretureApp.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift_TempretureApp/Pods-RxSwift_TempretureApp.debug.xcconfig"; sourceTree = "<group>"; };
 		57D91DFA288409330037F3A5 /* RxSwift_TempretureApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwift_TempretureApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57D91DFD288409330037F3A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		57D91DFF288409330037F3A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,11 @@
 		57D91E06288409350037F3A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57D91E09288409350037F3A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57D91E0B288409350037F3A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57D91E1128840BA90037F3A5 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		57D91E1328840C490037F3A5 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		57D91E15288411590037F3A5 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
+		7805DA429B644553CBB75C30 /* Pods_RxSwift_TempretureApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift_TempretureApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A6B1081EC02D73E056C59B2 /* Pods-RxSwift_TempretureApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift_TempretureApp.release.xcconfig"; path = "Target Support Files/Pods-RxSwift_TempretureApp/Pods-RxSwift_TempretureApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9625571B7DDEB85AEE9B7DA /* Pods_RxSwift_TempretureApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CDB5BA6A8FFD715CE040DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7805DA429B644553CBB75C30 /* Pods_RxSwift_TempretureApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		57D91DF1288409330037F3A5 = {
 			isa = PBXGroup;
 			children = (
 				57D91DFC288409330037F3A5 /* RxSwift_TempretureApp */,
 				57D91DFB288409330037F3A5 /* Products */,
+				AE3E61A879A2B0E82693DE8A /* Pods */,
+				08CDB5BA6A8FFD715CE040DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +80,24 @@
 				57D91DFD288409330037F3A5 /* AppDelegate.swift */,
 				57D91DFF288409330037F3A5 /* SceneDelegate.swift */,
 				57D91E01288409330037F3A5 /* ViewController.swift */,
+				57D91E1128840BA90037F3A5 /* Models.swift */,
+				57D91E1328840C490037F3A5 /* URLRequest+Extensions.swift */,
+				57D91E15288411590037F3A5 /* URL+Extensions.swift */,
 				57D91E03288409330037F3A5 /* Main.storyboard */,
 				57D91E06288409350037F3A5 /* Assets.xcassets */,
 				57D91E08288409350037F3A5 /* LaunchScreen.storyboard */,
 				57D91E0B288409350037F3A5 /* Info.plist */,
 			);
 			path = RxSwift_TempretureApp;
+			sourceTree = "<group>";
+		};
+		AE3E61A879A2B0E82693DE8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				094F026B9ADE0B0C7FF00891 /* Pods-RxSwift_TempretureApp.debug.xcconfig */,
+				9A6B1081EC02D73E056C59B2 /* Pods-RxSwift_TempretureApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57D91E0E288409350037F3A5 /* Build configuration list for PBXNativeTarget "RxSwift_TempretureApp" */;
 			buildPhases = (
+				8AF020923A3A10D93DB1E46A /* [CP] Check Pods Manifest.lock */,
 				57D91DF6288409330037F3A5 /* Sources */,
 				57D91DF7288409330037F3A5 /* Frameworks */,
 				57D91DF8288409330037F3A5 /* Resources */,
+				C5EEAD3AE9A3F34B89EEF09E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +168,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8AF020923A3A10D93DB1E46A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxSwift_TempretureApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5EEAD3AE9A3F34B89EEF09E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwift_TempretureApp/Pods-RxSwift_TempretureApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwift_TempretureApp/Pods-RxSwift_TempretureApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwift_TempretureApp/Pods-RxSwift_TempretureApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		57D91DF6288409330037F3A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				57D91E02288409330037F3A5 /* ViewController.swift in Sources */,
+				57D91E16288411590037F3A5 /* URL+Extensions.swift in Sources */,
 				57D91DFE288409330037F3A5 /* AppDelegate.swift in Sources */,
 				57D91E00288409330037F3A5 /* SceneDelegate.swift in Sources */,
+				57D91E1428840C490037F3A5 /* URLRequest+Extensions.swift in Sources */,
+				57D91E1228840BA90037F3A5 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +362,7 @@
 		};
 		57D91E0F288409350037F3A5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 094F026B9ADE0B0C7FF00891 /* Pods-RxSwift_TempretureApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +391,7 @@
 		};
 		57D91E10288409350037F3A5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6B1081EC02D73E056C59B2 /* Pods-RxSwift_TempretureApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
